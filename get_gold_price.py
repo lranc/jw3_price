@@ -34,9 +34,8 @@ for post in collection.find():
 pri_buy_datas = get_pri_data(buy_price_list)
 Outliers_to_drop = detect_outliers(pri_buy_datas,0,['price'])
 final_buy_data = get_final_data(pri_buy_datas,Outliers_to_drop,buy_price_list)
-print(final_buy_data)
+
 
 pri_sale_datas = get_pri_data(sale_price_list)
 Outliers_to_drop = detect_outliers(pri_sale_datas,0,['price'])
 final_sale_data = get_final_data(pri_sale_datas,Outliers_to_drop,buy_price_list)
-print(final_sale_data)
